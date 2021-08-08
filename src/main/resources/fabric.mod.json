@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "rutreplantswamp",
+  "version": "0.0.1",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Replant Swamp Trees",
+  "description": "Generates swamp trees instead of oak when planting oak saplings in a swamp biome.",
   "authors": [
-    "Me!"
+    "rutrum"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/rutrum/replant-swamp-trees"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/replantswamp/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.rutrum.replantswamp.ReplantSwamp"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "replantswamp.mixins.json"
   ],
 
   "depends": {

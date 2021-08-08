@@ -1,9 +1,5 @@
-# Fabric Example Mod
+# Replant Swamp Trees - Minecraft Mod
 
-## Setup
+If you plant an oak tree in a swamp biome, it grows the swamp tree instead of the oak trees.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Requires Fabric (contact me if you think I can get around this, this mod is seriously only one file and I'm new to this.)
