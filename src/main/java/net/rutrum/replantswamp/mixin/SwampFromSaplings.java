@@ -7,7 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.ConfiguredFeatures;
+import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 
 import java.util.Random;
@@ -32,17 +32,17 @@ public class SwampFromSaplings {
 		ServerWorld world, ChunkGenerator chunkGenerator,
 		BlockPos pos, BlockState state, Random random
 	) {
-		if (tree == ConfiguredFeatures.OAK
-				|| tree == ConfiguredFeatures.OAK_BEES_0002
-				|| tree == ConfiguredFeatures.OAK_BEES_002
-				|| tree == ConfiguredFeatures.OAK_BEES_005
-				|| tree == ConfiguredFeatures.FANCY_OAK
-				|| tree == ConfiguredFeatures.FANCY_OAK_BEES_0002
-				|| tree == ConfiguredFeatures.FANCY_OAK_BEES_002
-				|| tree == ConfiguredFeatures.FANCY_OAK_BEES_005) {
+		if (tree == TreeConfiguredFeatures.OAK
+				|| tree == TreeConfiguredFeatures.OAK_BEES_0002
+				|| tree == TreeConfiguredFeatures.OAK_BEES_002
+				|| tree == TreeConfiguredFeatures.OAK_BEES_005
+				|| tree == TreeConfiguredFeatures.FANCY_OAK
+				|| tree == TreeConfiguredFeatures.FANCY_OAK_BEES_0002
+				|| tree == TreeConfiguredFeatures.FANCY_OAK_BEES_002
+				|| tree == TreeConfiguredFeatures.FANCY_OAK_BEES_005) {
 
 			if (world.getBiome(pos).getCategory() == Biome.Category.SWAMP) {
-				return ConfiguredFeatures.SWAMP_OAK;
+				return TreeConfiguredFeatures.SWAMP_OAK;
 			}
 		}
 		return tree;
