@@ -2,7 +2,8 @@ gen:
     ./gradlew genSources
 
 build:
-    ./gradlew jar
+    ./gradlew build
+    ls build/libs/*.jar
 
 # Reset mapping to dependencies
 fix-mappings:
