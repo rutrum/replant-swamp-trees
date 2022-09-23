@@ -16,7 +16,6 @@ import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
 
 @Mixin(SaplingGenerator.class)
 public class SwampFromSaplings {
