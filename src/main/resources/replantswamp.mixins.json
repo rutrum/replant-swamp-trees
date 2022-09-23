@@ -4,8 +4,7 @@
     "package": "net.rutrum.replantswamp.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-        "SwampFromSaplings",
-        "BiomeCategoryAccessor"
+        "SwampFromSaplings"
     ],
     "client": [],
     "server": [],
