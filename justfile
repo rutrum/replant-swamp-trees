@@ -5,6 +5,9 @@ build:
     ./gradlew build
     ls build/libs/*.jar
 
+versions:
+    firefox "https://fabricmc.net/develop/"
+
 # Reset mapping to dependencies, mapping in vscode
 fix:
     ./gradlew --refresh-dependencies
