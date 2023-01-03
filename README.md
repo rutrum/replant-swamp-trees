@@ -8,3 +8,5 @@ As the mod is a simple mixin it should be easy to modify it to work with another
 Works on both client and server.
 
 ![](demo.gif)
+
+Special thank you to [nimids](https://github.com/nimids) for cleaning my code and updating from 1.19.2 to 1.19.3.
