@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "rutreplantswamp",
-  "version": "0.0.2",
+  "id": "replantswamp",
+  "version": "${version}",
 
   "name": "Replant Swamp Trees",
-  "description": "Generates swamp trees instead of oak when planting oak saplings in a swamp biome.",
+  "description": "Generates swamp trees instead of oak when planting oak saplings in a swamp or mangrove biome.",
   "authors": [
     "rutrum"
   ],
@@ -17,22 +17,13 @@
   "icon": "assets/replantswamp/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.rutrum.replantswamp.ReplantSwamp"
-    ]
-  },
   "mixins": [
     "replantswamp.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "fabric": "*",
-    "minecraft": "1.19.2",
+    "fabricloader": ">=0.14.12",
+    "minecraft": ">=1.19.3",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
