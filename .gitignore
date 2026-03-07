@@ -31,3 +31,8 @@ bin/
 # fabric
 
 run/
+
+# nix
+
+.direnv/
+result
