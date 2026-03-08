@@ -22,10 +22,30 @@
 
             # Useful utilities
             just
+
+            # OpenGL/Vulkan libraries for running Minecraft
+            libGL
+            libglvnd
+            libx11
+            libxcursor
+            libxrandr
+            libxi
+            libxxf86vm
+            glfw
           ];
 
           shellHook = ''
             export JAVA_HOME="${pkgs.jdk21}"
+            export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [
+              pkgs.libGL
+              pkgs.libglvnd
+              pkgs.libx11
+              pkgs.libxcursor
+              pkgs.libxrandr
+              pkgs.libxi
+              pkgs.libxxf86vm
+              pkgs.glfw
+            ]}:$LD_LIBRARY_PATH"
             echo "Replant Swamp Trees dev environment"
             echo "Java: $(java -version 2>&1 | head -1)"
             echo "Gradle: $(gradle --version | grep Gradle)"

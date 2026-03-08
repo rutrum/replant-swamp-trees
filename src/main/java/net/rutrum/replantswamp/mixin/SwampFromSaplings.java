@@ -21,7 +21,8 @@ public class SwampFromSaplings {
         at = @At(
             value = "INVOKE_ASSIGN",
             target = "Lnet/minecraft/world/level/block/grower/TreeGrower;getConfiguredFeature(Lnet/minecraft/util/RandomSource;Z)Lnet/minecraft/resources/ResourceKey;"
-        )
+        ),
+        ordinal = 1
     )
     private ResourceKey<ConfiguredFeature<?, ?>> replaceOakWithSwampOak(
             ResourceKey<ConfiguredFeature<?, ?>> tree,
