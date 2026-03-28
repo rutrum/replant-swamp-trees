@@ -14,16 +14,10 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            # Java 21 (required for Minecraft 1.21+)
-            jdk21
+            pkgs.openjdk25
 
-            # Build tools
-            gradle
-
-            # Useful utilities
             just
 
-            # OpenGL/Vulkan libraries for running Minecraft
             libGL
             libglvnd
             libx11
@@ -35,7 +29,8 @@
           ];
 
           shellHook = ''
-            export JAVA_HOME="${pkgs.jdk21}"
+            export JAVA_HOME="${pkgs.openjdk25}"
+            export PATH="$PWD/gradle/bin:$PATH"
             export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [
               pkgs.libGL
               pkgs.libglvnd
@@ -48,7 +43,6 @@
             ]}:$LD_LIBRARY_PATH"
             echo "Replant Swamp Trees dev environment"
             echo "Java: $(java -version 2>&1 | head -1)"
-            echo "Gradle: $(gradle --version | grep Gradle)"
           '';
         };
       }
